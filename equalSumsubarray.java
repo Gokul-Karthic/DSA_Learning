@@ -1,6 +1,6 @@
 public class equalSumsubarray {
       public static void main(String[] args) {
-          int[]arr= {1,2,3,4,5};
+          int[]arr= {-7,1,5,-4,3,0};
           int n = arr.length;
           int []prefix = new int[n];
           int []suffix = new int [n];
@@ -16,6 +16,7 @@ public class equalSumsubarray {
           for(int i=0;i<n-1;i++){
             if(prefix[i]==suffix[j--]){
                   System.out.println("yes");
+                  System.out.println(i+1);
                   return ;
             }
           }
